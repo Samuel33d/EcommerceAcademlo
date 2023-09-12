@@ -22,7 +22,7 @@ export function printModal(db) {
                 <h3>$${product.price}.00
                 <i id="${product.id}" class="bx bx-plus"></i>
                 </h3>
-                ${product.quantity ? `<span class="product__info--stock">Stock: ${product.quantity}</span><i id="${product.id}"` : `<span class="product__soldOut">Sold Out</span>`}
+                ${product.quantity ? `<span class="product__info--stock--modal">Stock: ${product.quantity}</span><i id="${product.id}"` : `<span class="product__soldOut">Sold Out</span>`}
             </div>
         </div>`
 
