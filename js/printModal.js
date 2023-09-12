@@ -1,4 +1,4 @@
-
+import { handleProductsCart } from "./handleProductsCart.js";
 
 export function printModal(db) {
     const containerModal = document.querySelector(".container__modal")
@@ -28,5 +28,7 @@ export function printModal(db) {
 
     }
 
+    handleProductsCart(db)
+    
     containerModal.innerHTML = html
 }
