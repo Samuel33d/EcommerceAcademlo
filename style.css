@@ -431,7 +431,7 @@ box-icon {
     font-size: .8rem;
 }
 
-.product__info>.bx:hover {
+.product__info>h3>.bx-plus:hover {
     background-color: var(--first-color);
     color: var(--button-color);
 }
@@ -641,6 +641,11 @@ footer>p {
     text-align: center;
     padding: 1rem;
     font-weight: 800;
+}
+
+footer>p>a {
+    color: #000;
+    text-decoration: underline;
 }
 
 /*!Estilos del footer*/
