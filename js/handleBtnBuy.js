@@ -30,9 +30,11 @@ export function handleBtnBuy(db) {
 
         window.localStorage.setItem("products", JSON.stringify(db.products))
         window.localStorage.setItem("cart", JSON.stringify(db.cart))
+        window.location.reload()
 
         sumTotalCarts(db)
         printProducts(db)
         printCart(db)
+
     })
 }
