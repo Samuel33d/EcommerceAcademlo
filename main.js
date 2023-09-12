@@ -16,6 +16,7 @@ import { filterActive } from "./js/filterActive.js";
 import { printModal } from "./js/printModal.js";
 import { handleModal } from "./js/handleModal.js";
 import { addToCartFromModal } from "./js/addToCartfromModal.js";
+import { handleScroll } from "./js/handleScroll.js"
 
 export async function main() {
 
@@ -44,6 +45,7 @@ export async function main() {
     navScroll()
     handleCart()
     filterActive()
+    handleScroll()
 }
 
 
