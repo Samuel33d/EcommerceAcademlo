@@ -7,4 +7,5 @@ export function mixitupConfig() {
             duration: 300
         }
     });
+
 }

@@ -12,6 +12,7 @@ import { sumTotalCarts } from "./js/sumTotalCarts.js";
 import { handleBtnBuy } from "./js/handleBtnBuy.js";
 import { cartAmount } from "./js/cartAmount.js";
 import { mixitupConfig } from "./js/mixitupConfig.js";
+import { filterActive } from "./js/filterActive.js";
 
 async function main() {
 
@@ -36,6 +37,7 @@ async function main() {
     handleBody()
     navScroll()
     handleCart()
+    filterActive()
 }
 
 
