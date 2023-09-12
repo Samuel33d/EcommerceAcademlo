@@ -12,7 +12,7 @@ export function addToCartFromModal(db) {
             const productFind = db.products.find((product) => product.id === id)
 
             if (db.cart[productFind.id]) {
-                if (productFind.quantity === db.cart[productFind.id].amount) return Swal.fire('No tenemos más en stock')
+                if (productFind.quantity === db.cart[productFind.id].amount) return alert('No tenemos más en stock')
                 db.cart[productFind.id].amount++
                     ;
             } else {
