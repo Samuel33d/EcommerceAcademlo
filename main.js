@@ -11,6 +11,7 @@ import { handleProductsCart } from "./js/handleProductsCart.js";
 import { sumTotalCarts } from "./js/sumTotalCarts.js";
 import { handleBtnBuy } from "./js/handleBtnBuy.js";
 import { cartAmount } from "./js/cartAmount.js";
+import { mixitupConfig } from "./js/mixitupConfig.js";
 
 async function main() {
 
@@ -29,6 +30,7 @@ async function main() {
     sumTotalCarts(db)
     handleBtnBuy(db)
     cartAmount(db)
+    mixitupConfig()
     load()
     handleNav()
     handleBody()

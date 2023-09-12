@@ -422,6 +422,11 @@ box-icon {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.product__info--stock {
+    color: var(--text-color-light);
+    font-size: .8rem;
+}
+
 .product__soldOut {
     background-color: var(--first-color);
     color: var(--title-color);
