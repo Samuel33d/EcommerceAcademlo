@@ -15,7 +15,7 @@ export function handleScroll() {
 
     sr.reveal(".product", {
         duration: 1000,
-        origin: "top",
+        origin: "bottom",
         distance: "20px",
     })
 
