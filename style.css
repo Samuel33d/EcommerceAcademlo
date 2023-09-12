@@ -703,6 +703,10 @@ footer>p>a {
     padding: .5rem;
 }
 
+.modal__product--info>h3 {
+    color: var(--first-color);
+}
+
 .closeModal {
     position: absolute;
     top: 1rem;
@@ -715,7 +719,6 @@ footer>p>a {
     flex-grow: 1;
     display: flex;
     gap: 1rem;
-    justify-content: flex-start;
     color: var(--text-color-light);
     font-size: .8rem;
 }
@@ -728,9 +731,27 @@ footer>p>a {
     justify-content: flex-end;
     color: var(--text-color-light);
     font-size: .8rem;
+
 }
 
+.modal__product--info>h3>.bx-plus {
+    cursor: pointer;
+    position: absolute;
+    left: 6rem;
+    bottom: 1.6rem;
+    padding: .2rem;
+    border-radius: 50%;
+    background-color: var(--container-color);
+    font-size: 1.5rem;
+    color: var(--title-color);
+    box-shadow: var(--shadow-general);
+    transition: background-color 0.3s, color 0.3s;
+}
 
+.modal__product--info>h3>.bx-plus:hover {
+    background-color: var(--first-color);
+    color: var(--button-color);
+}
 
 
 

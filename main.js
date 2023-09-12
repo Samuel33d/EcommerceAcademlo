@@ -15,8 +15,9 @@ import { mixitupConfig } from "./js/mixitupConfig.js";
 import { filterActive } from "./js/filterActive.js";
 import { printModal } from "./js/printModal.js";
 import { handleModal } from "./js/handleModal.js";
+import { addToCartFromModal } from "./js/addToCartfromModal.js";
 
-async function main() {
+export async function main() {
 
     const db = {
         products: JSON.parse(window.localStorage.getItem("products")) || (await getInfo()),
@@ -34,6 +35,7 @@ async function main() {
     handleBtnBuy(db)
     cartAmount(db)
     printModal(db)
+    addToCartFromModal(db)
     handleModal()
     mixitupConfig()
     load()

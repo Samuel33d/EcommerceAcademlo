@@ -1,23 +1,28 @@
 import { handleProductsCart } from "./handleProductsCart.js";
+import { printModal } from "./printModal.js";
+
 
 export function handleModal(db) {
-    const closeModal = document.querySelector(".closeModal")
     const containerModal = document.querySelector(".container__modal")
     const productContent = document.querySelector(".content__products")
 
 
-    closeModal.addEventListener("click", function () {
-        containerModal.classList.toggle("container__modal--show")
-    })
 
     productContent.addEventListener("click", function (e) {
-        if (e.target.classList.contains("product__p")) {
+        if (e.target.classList.contains("showModalProduct")) {
             containerModal.classList.toggle("container__modal--show")
-        }
 
+            printModal(db)
+
+            const closeModal = document.querySelector(".closeModal")
+
+            closeModal.addEventListener("click", function () {
+                containerModal.classList.toggle("container__modal--show")
+            }
+            )
+        }
     })
 
+    printModal(db)
     handleProductsCart(db)
-
-
 }

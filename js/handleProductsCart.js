@@ -1,5 +1,6 @@
 import { printCart } from "./printCart.js";
 import { printProducts } from "./printProducts.js";
+import { sumTotalCarts } from "./sumTotalCarts.js";
 import { cartAmount } from './cartAmount.js';
 
 export function handleProductsCart(db) {
@@ -40,5 +41,6 @@ export function handleProductsCart(db) {
         printCart(db)
         printProducts(db)
         cartAmount(db)
+        sumTotalCarts(db)
     })
 }
