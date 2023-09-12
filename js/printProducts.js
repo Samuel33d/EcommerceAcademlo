@@ -12,7 +12,7 @@ export async function printProducts(db) {
         <h3>$${product.price}.00
         ${product.quantity ? `<span class="product__info--stock">Stock: ${product.quantity}</span><i id="${product.id}" class="bx bx-plus"></i>` : `<span class="product__soldOut">Sold Out</span>`}
         </h3>
-        <p>${product.name}</p>
+        <p class="product__p">${product.name}</p>
         </div>
         
     </div>`

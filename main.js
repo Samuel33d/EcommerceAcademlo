@@ -13,6 +13,8 @@ import { handleBtnBuy } from "./js/handleBtnBuy.js";
 import { cartAmount } from "./js/cartAmount.js";
 import { mixitupConfig } from "./js/mixitupConfig.js";
 import { filterActive } from "./js/filterActive.js";
+import { printModal } from "./js/printModal.js";
+import { handleModal } from "./js/handleModal.js";
 
 async function main() {
 
@@ -31,6 +33,8 @@ async function main() {
     sumTotalCarts(db)
     handleBtnBuy(db)
     cartAmount(db)
+    printModal(db)
+    handleModal()
     mixitupConfig()
     load()
     handleNav()
