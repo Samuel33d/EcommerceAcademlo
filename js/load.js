@@ -4,5 +4,4 @@ export function load() {
     setTimeout(function () {
         load.style.display = "none"
     }, 600);
-
 }

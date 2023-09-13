@@ -1,13 +1,9 @@
 export function filterActive() {
-    const items = document.querySelectorAll(".filter__products .filter");
+    const items = document.querySelector(".filter__products");
 
-    for (const item of items) {
-        item.addEventListener("click", (e) => {
-            for (const itemR of items) {
-                itemR.classList.remove("filter__active");
-            }
-
-            e.currentTarget.classList.add("filter__active");
-        });
-    }
+    items.addEventListener("click", function (e) {
+        if (e.target.classList.contains("filter")) {
+            filter.classList.toggle("filter__active")
+        }
+    })
 }
