@@ -26,8 +26,6 @@ async function main() {
     }
 
 
-
-
     getInfo(db)
     printProducts(db)
     addToCartFromProducts(db)
