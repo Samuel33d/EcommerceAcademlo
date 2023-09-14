@@ -18,12 +18,13 @@ import { handleModal } from "./js/handleModal.js";
 import { addToCartFromModal } from "./js/addToCartfromModal.js";
 import { handleScroll } from "./js/handleScroll.js"
 
-export async function main() {
+async function main() {
 
     const db = {
         products: JSON.parse(window.localStorage.getItem("products")) || (await getInfo()),
         cart: JSON.parse(window.localStorage.getItem("cart")) || {}
     }
+
 
 
 

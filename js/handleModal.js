@@ -1,4 +1,3 @@
-import { handleProductsCart } from "./handleProductsCart.js";
 import { printModal } from "./printModal.js";
 
 
@@ -24,5 +23,4 @@ export function handleModal(db) {
     })
 
     printModal(db)
-    handleProductsCart(db)
 }
